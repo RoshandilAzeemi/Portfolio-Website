@@ -21,7 +21,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Roshandil Azeemi — Portfolio",
+  title: "Roshandil Azeemi",
   description:
     "Computer Science student at McMaster University. Data Analyst, Python Developer, and aspiring Cloud Practitioner.",
   keywords: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Python",
   ],
   openGraph: {
-    title: "Roshandil Azeemi — Portfolio",
+    title: "Roshandil Azeemi",
     description:
       "Computer Science student at McMaster University. Data Analyst & Python Developer.",
     type: "website",

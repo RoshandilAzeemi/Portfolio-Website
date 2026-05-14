@@ -44,7 +44,7 @@ export default function BentoGrid() {
                   <Gamepad2 className="h-4.5 w-4.5 text-violet-400" />
                 </div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
-                  Gaming
+                  Favourite Games
                 </h3>
               </div>
 
@@ -74,7 +74,7 @@ export default function BentoGrid() {
                   <Film className="h-4.5 w-4.5 text-amber-400" />
                 </div>
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground">
-                  Films
+                  Favourite Films
                 </h3>
               </div>
 

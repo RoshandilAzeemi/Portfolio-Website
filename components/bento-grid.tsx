@@ -22,7 +22,6 @@ const techStack = [
   { name: "Pandas", color: "#150458" },
   { name: "SQL", color: "#DC382D" },
   { name: "Git", color: "#F05032" },
-  { name: "Streamlit", color: "#FF4B4B" },
   { name: "Power BI", color: "#F2C811" },
 ];
 

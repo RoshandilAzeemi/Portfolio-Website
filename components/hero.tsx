@@ -11,14 +11,6 @@ export default function Hero() {
     >
       {/* Name — outline text */}
       <div className="relative z-10 text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="mb-4 text-sm tracking-[0.3em] uppercase text-muted"
-        >
-          Portfolio
-        </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}

@@ -52,7 +52,7 @@ const socialItems = [
   {
     icon: LinkedInIcon,
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/roshandil-azeemi",
+    href: "https://www.linkedin.com/in/roshandil-azeemi-53257b327/",
   },
   {
     icon: GitHubIcon,

@@ -51,8 +51,7 @@ export default function Contact() {
         <ScrollReveal delay={0.4}>
           <div className="mt-24 border-t border-border pt-8">
             <p className="text-xs text-muted-dark">
-              © {new Date().getFullYear()} Roshandil Azeemi. Built with Next.js
-              &amp; Tailwind CSS.
+              © 2026 Roshandil Azeemi
             </p>
           </div>
         </ScrollReveal>

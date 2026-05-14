@@ -1,22 +1,25 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 export default function CursorGlow() {
-  const [position, setPosition] = useState({ x: -200, y: -200 });
+  const glowRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const glow = glowRef.current;
+    if (!glow) return;
+
     const handleMouseMove = (e: MouseEvent) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+      // Direct DOM manipulation — bypasses React re-renders for zero lag
+      glow.style.transform = `translate(${e.clientX - 250}px, ${e.clientY - 250}px)`;
       if (!isVisible) setIsVisible(true);
     };
 
     const handleMouseLeave = () => setIsVisible(false);
     const handleMouseEnter = () => setIsVisible(true);
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
     document.addEventListener("mouseleave", handleMouseLeave);
     document.addEventListener("mouseenter", handleMouseEnter);
 
@@ -28,25 +31,20 @@ export default function CursorGlow() {
   }, [isVisible]);
 
   return (
-    <motion.div
-      className="pointer-events-none fixed inset-0 z-[1]"
-      animate={{
-        opacity: isVisible ? 1 : 0,
-      }}
-      transition={{ duration: 0.3 }}
-    >
+    <div className="pointer-events-none fixed inset-0 z-[1]">
       <div
-        className="absolute rounded-full"
+        ref={glowRef}
+        className="absolute will-change-transform"
         style={{
           width: 500,
           height: 500,
-          left: position.x - 250,
-          top: position.y - 250,
+          borderRadius: "50%",
           background:
             "radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(139, 92, 246, 0.04) 40%, transparent 70%)",
-          transition: "left 0.15s ease-out, top 0.15s ease-out",
+          opacity: isVisible ? 1 : 0,
+          transition: "opacity 0.3s",
         }}
       />
-    </motion.div>
+    </div>
   );
 }

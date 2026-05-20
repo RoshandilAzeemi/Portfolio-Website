@@ -42,7 +42,7 @@ const projects = [
       "Integrated into production workflow at SMP Promotions",
     ],
     liveUrl: null,
-    githubUrl: "#",
+    githubUrl: "https://github.com/RoshandilAzeemi/Invoice-Pipeline",
     gradient: "from-indigo-600/20 to-purple-600/20",
     accentBorder: "border-indigo-500/20",
   },

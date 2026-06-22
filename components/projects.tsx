@@ -98,7 +98,7 @@ export default function Projects() {
       <ScrollReveal delay={0.15}>
         <div
           ref={scrollRef}
-          className="no-scrollbar snap-scroll flex items-stretch gap-6 overflow-x-auto px-6 pb-4 sm:px-[max(1.5rem,calc((100vw-56rem)/2+1.5rem))]"
+          className="no-scrollbar snap-scroll flex flex-wrap items-stretch justify-center gap-6 overflow-x-auto px-6 pb-4"
         >
           {projects.map((project, i) => (
             <motion.div

@@ -50,7 +50,7 @@ const projects = [
     title: "CreditLens",
     tagline: "End-to-End Credit Risk Analysis Pipeline",
     description:
-      "Built a full credit risk analysis pipeline on 1,000 loan records — cleaning data in Python/Pandas (handling 394 nulls as unknown to preserve sample size), querying insights in PostgreSQL, and visualizing key metrics in Power BI. Wrote a 10-query SQL portfolio uncovering default drivers like 40.94% default rate for under-25 borrowers and 49.27% for those with little checking balance.",
+      "End-to-end credit risk analysis pipeline on 1,000 loan records — cleaning data in Python/Pandas, querying insights with a 10-query SQL portfolio in PostgreSQL, and visualizing key default drivers in an interactive Power BI dashboard with KPI cards, bar charts, scatter plots, and slicers.",
     tech: ["Python", "PostgreSQL", "Pandas", "Power BI"],
     highlights: [
       "30% overall default rate surfaced via KPI cards and interactive dashboard",
@@ -98,7 +98,7 @@ export default function Projects() {
       <ScrollReveal delay={0.15}>
         <div
           ref={scrollRef}
-          className="no-scrollbar snap-scroll flex gap-6 overflow-x-auto px-6 pb-4 sm:px-[max(1.5rem,calc((100vw-56rem)/2+1.5rem))]"
+          className="no-scrollbar snap-scroll flex items-stretch gap-6 overflow-x-auto px-6 pb-4 sm:px-[max(1.5rem,calc((100vw-56rem)/2+1.5rem))]"
         >
           {projects.map((project, i) => (
             <motion.div

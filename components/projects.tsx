@@ -59,8 +59,8 @@ const projects = [
     ],
     liveUrl: null,
     githubUrl: "https://github.com/RoshandilAzeemi/CreditLens",
-    gradient: "from-teal-600/20 to-cyan-600/20",
-    accentBorder: "border-teal-500/20",
+    gradient: "from-purple-600/20 to-violet-600/20",
+    accentBorder: "border-purple-500/20",
   },
 ];
 
@@ -107,10 +107,10 @@ export default function Projects() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 * i, duration: 0.5 }}
-              className={`group relative min-w-[340px] max-w-[480px] shrink-0 rounded-2xl border ${project.accentBorder} bg-gradient-to-br ${project.gradient} p-6 transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(139,92,246,0.1)] sm:min-w-[440px] sm:p-8`}
+              className={`group relative flex min-w-[340px] max-w-[480px] shrink-0 flex-col rounded-2xl border ${project.accentBorder} bg-gradient-to-br ${project.gradient} p-6 transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(139,92,246,0.1)] sm:min-w-[440px] sm:p-8`}
             >
               {/* Glass inner card */}
-              <div className="rounded-xl border border-white/5 bg-black/40 p-5 backdrop-blur-sm sm:p-6">
+              <div className="flex flex-1 flex-col rounded-xl border border-white/5 bg-black/40 p-5 backdrop-blur-sm sm:p-6">
                 <h3 className="mb-1 text-xl font-bold text-foreground sm:text-2xl">
                   {project.title}
                 </h3>
@@ -147,7 +147,7 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-3">
+                <div className="mt-auto flex gap-3 pt-4">
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}

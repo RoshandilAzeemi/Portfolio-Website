@@ -46,6 +46,22 @@ const projects = [
     gradient: "from-indigo-600/20 to-purple-600/20",
     accentBorder: "border-indigo-500/20",
   },
+  {
+    title: "CreditLens",
+    tagline: "End-to-End Credit Risk Analysis Pipeline",
+    description:
+      "Built a full credit risk analysis pipeline on 1,000 loan records — cleaning data in Python/Pandas (handling 394 nulls as unknown to preserve sample size), querying insights in PostgreSQL, and visualizing key metrics in Power BI. Wrote a 10-query SQL portfolio uncovering default drivers like 40.94% default rate for under-25 borrowers and 49.27% for those with little checking balance.",
+    tech: ["Python", "PostgreSQL", "Pandas", "Power BI"],
+    highlights: [
+      "30% overall default rate surfaced via KPI cards and interactive dashboard",
+      "10-query SQL portfolio revealing key default drivers by age, housing, and savings",
+      "Homeowners default at nearly half the rate of renters",
+    ],
+    liveUrl: null,
+    githubUrl: "https://github.com/RoshandilAzeemi/CreditLens",
+    gradient: "from-teal-600/20 to-cyan-600/20",
+    accentBorder: "border-teal-500/20",
+  },
 ];
 
 export default function Projects() {

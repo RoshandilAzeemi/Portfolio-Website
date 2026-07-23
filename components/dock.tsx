@@ -7,7 +7,6 @@ import {
   Code2,
   Briefcase,
   FolderKanban,
-  Gamepad2,
   Mail,
 } from "lucide-react";
 
@@ -44,7 +43,6 @@ const navItems = [
   { icon: Code2, label: "Skills", href: "#skills" },
   { icon: Briefcase, label: "Experience", href: "#experience" },
   { icon: FolderKanban, label: "Projects", href: "#projects" },
-  { icon: Gamepad2, label: "Interests", href: "#interests" },
   { icon: Mail, label: "Contact", href: "#contact" },
 ];
 

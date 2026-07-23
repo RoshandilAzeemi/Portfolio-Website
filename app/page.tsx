@@ -4,7 +4,6 @@ import About from "@/components/about";
 import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
-import BentoGrid from "@/components/bento-grid";
 import Contact from "@/components/contact";
 import Dock from "@/components/dock";
 
@@ -24,7 +23,6 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
-        <BentoGrid />
         <Contact />
       </main>
 

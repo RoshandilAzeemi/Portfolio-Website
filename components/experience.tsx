@@ -5,6 +5,16 @@ import { Briefcase, MapPin, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    role: "Business Systems Analyst (Contract)",
+    company: "The Clean Divorce",
+    period: "Jul 2026 – Present",
+    location: "Remote",
+    bullets: [
+      "Conducting end-to-end analysis of the client purchasing journey to identify friction points and conversion opportunities across pricing pages, CTAs, checkout flow, and consultation booking.",
+      "Developing and implementing recommendations to optimize the sales funnel and improve purchasing experience clarity for prospective clients.",
+    ],
+  },
+  {
     role: "Data Analyst",
     company: "SMP Promotions",
     period: "Apr 2025 – Aug 2025",
